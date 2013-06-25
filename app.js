@@ -15,7 +15,7 @@ var controlLoop = function () {
   setTimeout(controlLoop, 1000);
 };
 
-board.on("ready", function() {
+board.on('ready', function() {
 
   for(i=0;++i<16;) {
     this.pinMode(i, 1);
@@ -42,6 +42,6 @@ board.on("ready", function() {
   var all = channels.Default.Array();
   all.off();
 
-  console.log("Set up complete.");
+  console.log('Set up complete.');
   controlLoop();
 });
