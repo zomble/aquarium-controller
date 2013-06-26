@@ -1,6 +1,6 @@
 [
   {
-    "addr": 4,
+    "addr": 2,
     "name": "Light Channel 1 - Switch",
     "type": "relay",
     "opts": {
@@ -25,8 +25,140 @@
     "addr": 3,
     "name": "Light Channel 1 - PWM",
     "type": "dimmer",
-    "default": 0,
     "opts": {
+      "default": 0,
+      "period": {
+        "start": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "millisecond": 0
+        },
+        "end": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "millisecond": 0
+        }
+      }
+    }
+  },
+  {
+    "addr": 4,
+    "name": "Light Channel 2 - Switch",
+    "type": "relay",
+    "opts": {
+      "default": false,
+      "period": {
+        "start": {
+          "hour": 13,
+          "minute": 0,
+          "second": 5,
+          "millisecond": 0
+        },
+        "end": {
+          "hour": 21,
+          "minute": 59,
+          "second": 55,
+          "millisecond": 0
+        }
+      }
+    }
+  },
+  {
+    "addr": 5,
+    "name": "Light Channel 2 - PWM",
+    "type": "dimmer",
+    "opts": {
+      "default": 0,
+      "period": {
+        "start": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "millisecond": 0
+        },
+        "end": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "millisecond": 0
+        }
+      }
+    }
+  },
+  {
+    "addr": 7,
+    "name": "Light Channel 3 - Switch",
+    "type": "relay",
+    "opts": {
+      "default": false,
+      "period": {
+        "start": {
+          "hour": 13,
+          "minute": 0,
+          "second": 5,
+          "millisecond": 0
+        },
+        "end": {
+          "hour": 21,
+          "minute": 59,
+          "second": 55,
+          "millisecond": 0
+        }
+      }
+    }
+  },
+  {
+    "addr": 6,
+    "name": "Light Channel 3 - PWM",
+    "type": "dimmer",
+    "opts": {
+      "default": 0,
+      "period": {
+        "start": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "millisecond": 0
+        },
+        "end": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "millisecond": 0
+        }
+      }
+    }
+  },
+  {
+    "addr": 8,
+    "name": "Light Channel 4 - Switch",
+    "type": "relay",
+    "opts": {
+      "default": false,
+      "period": {
+        "start": {
+          "hour": 13,
+          "minute": 0,
+          "second": 5,
+          "millisecond": 0
+        },
+        "end": {
+          "hour": 21,
+          "minute": 59,
+          "second": 55,
+          "millisecond": 0
+        }
+      }
+    }
+  },
+  {
+    "addr": 9,
+    "name": "Light Channel 4 - PWM",
+    "type": "dimmer",
+    "opts": {
+      "default": 0,
       "period": {
         "start": {
           "hour": 13,
