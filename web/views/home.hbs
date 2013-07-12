@@ -1,0 +1,22 @@
+<div class="container">
+
+	<h2>Channels</h2>
+
+	<div class="list-group channels">
+      {{#channels}}
+		  <a href="#c{{pin.pin}}" class="list-group-item">
+
+			  <h4 class="list-group-item-heading"><i class="icon-{{type}} icon"></i> {{name}}</h4>
+		  </a>
+      {{/channels}}
+	</div>
+
+  <hr>
+
+{{#channels}}
+  <a id="c{{pin.pin}}"></a>
+	<h3><i class="icon-{{type}} icon"></i> {{name}}</h3>
+
+{{/channels}}
+
+</div>

@@ -5,9 +5,7 @@ var five = require('johnny-five')
 
 var controlLoop = function () {
 
-  var all = channels.Default.Array();
-
-  all.forEach(function(channel, i) {
+  (channels.Default.all()).forEach(function(channel, i) {
     channel.run();
   });
 
@@ -17,7 +15,8 @@ var controlLoop = function () {
 
 board.on('ready', function() {
 
-  for(i=0;++i<16;) {
+  for(i=1;++i<16;) {
+    console.log(i);
     this.pinMode(i, 1);
     this.digitalWrite(i, 1);
   }
@@ -38,8 +37,7 @@ board.on('ready', function() {
   }
 
   // Always off by default.
-  var all = channels.Default.Array();
-  all.forEach(function (channel, index) {
+  (channels.Default.all()).forEach(function (channel, index) {
     channel.off();
   });
 

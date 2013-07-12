@@ -1,21 +1,34 @@
 var express = require('express')
-  , cons = require('consolidate')
+  , Handlebars = require('handlebars')
+  , exphbs = require('express3-handlebars')
   , app = express()
-  , channels = require('../lib/channels');
+  , channels = require('../lib/channels')
+  , hbs;
 
-app.engine('mustache', cons.mustache);
-
-app.set('view engine', 'mustache');
-app.set('views', __dirname + '/views');
-app.set('partials', {
-  doc: __dirname + '/views/doc.mustache'
+hbs = exphbs.create({
+  layoutsDir: __dirname+'/views/layouts',
+  partialsDir:  __dirname+'/views/partials',
+  defaultLayout: 'main',
+  helpers: {
+    renderPartial: function(templateName) {
+      console.log(templateName);
+      return Handlebars.render(templateName, this);
+    }
+  },
+  extname: ".hbs"
 });
-app.use(express.static(__dirname + '/public'));
+
+app.engine('hbs', hbs.engine);
+
+app.set('view engine', 'hbs');
+app.set('views', __dirname + '/views');
+app.use(express.static(__dirname +'/public'));
 
 app.get('/', function (req, res) {
-  var allChannels = channels.Default.Array();
-  res.render('index', {
-    title: 'index',
+  var allChannels = channels.Default.all();
+
+  res.render('home', {
+    title: 'index thing',
     channels: allChannels
   });
 });
