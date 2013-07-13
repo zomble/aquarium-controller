@@ -1,90 +1,38 @@
 [
   {
-    "addr": 2,
+    "addr": 14,
     "name": "Light Channel 1 - Switch",
     "type": "relay",
     "opts": {
       "default": false,
-      "period": {
-        "start": {
-          "hour": 13,
-          "minute": 0,
-          "second": 5,
-          "millisecond": 0
-        },
-        "end": {
-          "hour": 21,
-          "minute": 59,
-          "second": 55,
-          "millisecond": 0
-        }
-      }
+      "period": "18:00 - 23:59:55"
     }
   },
   {
-    "addr": 3,
+    "addr": 11,
     "name": "Light Channel 1 - PWM",
     "type": "dimmer",
     "opts": {
       "default": 0,
-      "period": {
-        "start": {
-          "hour": 13,
-          "minute": 0,
-          "second": 0,
-          "millisecond": 0
-        },
-        "end": {
-          "hour": 22,
-          "minute": 0,
-          "second": 0,
-          "millisecond": 0
-        }
-      }
+      "period": "13:00 - 22:00"
     }
   },
   {
-    "addr": 4,
+    "addr": 15,
     "name": "Light Channel 2 - Switch",
     "type": "relay",
     "opts": {
       "default": false,
-      "period": {
-        "start": {
-          "hour": 13,
-          "minute": 0,
-          "second": 5,
-          "millisecond": 0
-        },
-        "end": {
-          "hour": 21,
-          "minute": 59,
-          "second": 55,
-          "millisecond": 0
-        }
-      }
+      "period":  "13:00:05 - 21:59:55"
     }
   },
   {
-    "addr": 5,
+    "addr": 9,
     "name": "Light Channel 2 - PWM",
     "type": "dimmer",
     "opts": {
       "default": 0,
-      "period": {
-        "start": {
-          "hour": 13,
-          "minute": 0,
-          "second": 0,
-          "millisecond": 0
-        },
-        "end": {
-          "hour": 22,
-          "minute": 0,
-          "second": 0,
-          "millisecond": 0
-        }
-      }
+      "period": "13:00 - 23:59:00"
     }
   },
   {
@@ -93,42 +41,16 @@
     "type": "relay",
     "opts": {
       "default": false,
-      "period": {
-        "start": {
-          "hour": 13,
-          "minute": 0,
-          "second": 5,
-          "millisecond": 0
-        },
-        "end": {
-          "hour": 21,
-          "minute": 59,
-          "second": 55,
-          "millisecond": 0
-        }
-      }
+      "period": "13:00 - 23:59:00"
     }
   },
   {
-    "addr": 6,
+    "addr": 9,
     "name": "Light Channel 3 - PWM",
     "type": "dimmer",
     "opts": {
       "default": 0,
-      "period": {
-        "start": {
-          "hour": 13,
-          "minute": 0,
-          "second": 0,
-          "millisecond": 0
-        },
-        "end": {
-          "hour": 22,
-          "minute": 0,
-          "second": 0,
-          "millisecond": 0
-        }
-      }
+      "period": "13:00 - 23:59:00"
     }
   },
   {
@@ -137,20 +59,7 @@
     "type": "relay",
     "opts": {
       "default": false,
-      "period": {
-        "start": {
-          "hour": 13,
-          "minute": 0,
-          "second": 5,
-          "millisecond": 0
-        },
-        "end": {
-          "hour": 21,
-          "minute": 59,
-          "second": 55,
-          "millisecond": 0
-        }
-      }
+      "period": "13:00 - 23:59:00"
     }
   },
   {
@@ -159,20 +68,7 @@
     "type": "dimmer",
     "opts": {
       "default": 0,
-      "period": {
-        "start": {
-          "hour": 13,
-          "minute": 0,
-          "second": 0,
-          "millisecond": 0
-        },
-        "end": {
-          "hour": 22,
-          "minute": 0,
-          "second": 0,
-          "millisecond": 0
-        }
-      }
+      "period": "13:00 - 23:59:00"
     }
   }
 ]

@@ -4,6 +4,7 @@
   "description": "A simple, channel based arduino controller. Built on top of johnny-five.",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Paul Croker",
@@ -13,6 +14,10 @@
     "express": "~3.2.6",
     "handlebars": "~1.0.12",
     "express3-handlebars": "~0.4.1",
-    "glob": "~3.2.1"
+    "glob": "~3.2.1",
+    "chrono-node": "~0.0.4"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0"
   }
 }
