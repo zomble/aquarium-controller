@@ -1,0 +1,53 @@
+
+
+body {
+	padding: 0;
+}
+
+.panel {
+  background-color: #fff;
+  margin: 10px auto 5px auto;
+  padding: 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 5px solid #eee; }
+
+  .panel .padded {
+    padding: 20px; }
+
+  .panel .padded10 {
+    padding: 10px; }
+
+  .panel .padded5 {
+    padding: 5px; }
+
+
+.align-center {
+    text-align:center
+}
+
+/* Nav Bar */
+
+.navbar-static-top {
+	margin-bottom: 0;
+}
+.navbar.navbar-static-top .navbar-inner {
+	min-height: 0;
+}
+.navbar.navbar-static-top .brand {
+	padding: 10px 20px 12px;
+}
+
+
+
+
+
+
+/* Channel list. */
+
+.channels {
+	padding: 0 .5em;
+}
+.channels .icon {
+	margin-right: .5em;
+}

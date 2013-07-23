@@ -1,22 +1,64 @@
+<div class="sensor-overview">
+	<div class="container">
+		<div class="sensors">
+			<div class="sensor big">
+				<i class="type">pH</i><span class="value">6.5</span>
+			</div>
+			<div class="sensor big">
+				<i class="type">Temp</i><span class="value">24.5<span class="unit">° C</span></span>
+			</div>
+			<div class="sensor over big">
+				<i class="type">ORP</i><span class="value">53.86</span>
+			</div>
+			<div class="sensor big">
+				<i class="type">O<sub>2</sub></i><span class="value">49<span class="unit">ppm</span></span>
+			</div>
+			<div class="sensor under big">
+				<i class="type">Lux</i><span class="value">8.86</span>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="container">
 
 	<h2>Channels</h2>
 
-	<div class="list-group channels">
-      {{#channels}}
-		  <a href="#c{{pin.pin}}" class="list-group-item">
-
-			  <h4 class="list-group-item-heading"><i class="icon-{{type}} icon"></i> {{name}}</h4>
-		  </a>
-      {{/channels}}
-	</div>
-
-  <hr>
-
 {{#channels}}
   <a id="c{{pin.pin}}"></a>
 	<h3><i class="icon-{{type}} icon"></i> {{name}}</h3>
-
+  Channel Dataz
 {{/channels}}
+
+	<h2>Relay Overview</h2>
+
+	<div class="panel">
+		<div class="row-fluid">
+			<div class="span2 align-center">
+				<h5>Lights</h5>
+				<a class="btn btn-danger disabled">Off</a>
+			</div>
+			<div class="span2 align-center">
+				<h5>CO<sub>2</sub></h5>
+				<a class="btn btn-danger disabled">Off</a>
+			</div>
+			<div class="span2 align-center">
+				<h5>Pump</h5>
+				<a class="btn btn-danger disabled">Off</a>
+			</div>
+			<div class="span2 align-center">
+				<h5>Heater</h5>
+				<a class="btn btn-success disabled">On</a>
+			</div>
+			<div class="span2 align-center">
+				<h5>Something</h5>
+				<a class="btn btn-danger disabled">Off</a>
+			</div>
+			<div class="span2 align-center">
+				<h5>Heater</h5>
+				<a class="btn btn-danger disabled">Off</a>
+			</div>
+		</div>
+	</div>
 
 </div>

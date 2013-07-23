@@ -2,7 +2,7 @@
 
 html,
 body {
-  padding: .35em .3em;
+  padding: 0;
 }
 
 .vertical-align-middle,
@@ -19,6 +19,63 @@ a.external {
   width: 16px;
   height: 16px;
 }
+
+// Sensor Readings
+
+.sensor {
+
+}
+.sensor .type {
+  background-color: #68b920;
+  display: inline-block;
+  color: #fff;
+  padding: .4em 0;
+  border-radius: 4px;
+  width: 3.25em;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.33);
+  text-align: center;
+}
+.sensor .value {
+  display: inline-block;
+  padding: .4em .3em;
+}
+
+.sensor .unit {
+  color: #9a9a9a;
+  font-size:.8em;
+  font-style: italic;
+}
+
+.sensor.big {
+  font-size: 2em;
+}
+
+.sensor.over .type {
+  background-color: #c61c1c;
+}
+.sensor.under .type {
+  background-color: #0070bc;
+}
+
+// Sensor Overview
+
+.sensor-overview {
+  padding: 2em .5em;
+  background: #f5f6f8;
+  border-bottom: 1px solid #cbcbcb;
+  margin-bottom: 1.5em;
+  box-shadow: 0 1px 0 #f2f2f2;
+}
+
+.sensor-overview .sensors {
+  display: table;
+  width: 100%;
+}
+.sensor-overview .sensors .sensor {
+  display: table-cell;
+  text-align: center;
+}
+
 
 // Channel list.
 

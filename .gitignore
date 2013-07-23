@@ -2,6 +2,8 @@ config.json
 
 .idea
 
+node_modules
+
 lib-cov
 *.seed
 *.log

@@ -1,2 +1,2 @@
-var app = require('./app/index'),
-    web = require('./web/index');
+require('./app/index');
+require('./web/index');
